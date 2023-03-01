@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="cv.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Freddie Lane</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+               </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>  
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="./Foto2.jpg" alt="">
+            </div>
+            <h1>Freddie Lane</h1>
+            <h2>Futuro Programador</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenedor-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Freddie Lane</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Consequuntur quis veniam nisi molestiae neque perspiciatis laboriosam, eos, 
+                 porro facilis eligendi id ab iusto unde, molestias obcaecati repellendus debitis maxime consequatur?</p>
+
+            <div class="fila">
+                <!-- datos personales  -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            23-05-1984
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            54 46546 4555
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Correo@ejemplo.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.ejemplo.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            La Plata, Argentina
+                        </li>
+                    </ul>
+                </div>                 
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenedor-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Universidad</h4>
+                        <span class="Lugar"> Universidad Nacional de La Plata</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quia ad beatae delectus temporibus odio amet et aliquam, laboriosam dicta obcaecati possimus deleniti. 
+                            Error, quaerat reiciendis iure at assumenda cumque necessitatibus?</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenedor-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número de Teléfono">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="row fondo2 text-center">
+            <p class="mt-1">Copyright &copy 27 de Febrero de 2023</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
